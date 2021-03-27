@@ -37,5 +37,8 @@ DebugConfig/
 RTE/
 settings/
 rt-thread/output
+board/CubeMX_Config/Core
+board/CubeMX_Config/Drivers
+board/CubeMX_Config/EWARM
 *.uvguix*
 cconfig.h
