@@ -15,15 +15,15 @@
         <debug>1</debug>
         <option>
           <name>ExePath</name>
-          <state>rt-thread\Exe</state>
+          <state>rt-thread\output\Exe</state>
         </option>
         <option>
           <name>ObjPath</name>
-          <state>rt-thread\Obj</state>
+          <state>rt-thread\output\Obj</state>
         </option>
         <option>
           <name>ListPath</name>
-          <state>rt-thread\List</state>
+          <state>rt-thread\output\List</state>
         </option>
         <option>
           <name>GEndianMode</name>
@@ -65,7 +65,7 @@
         </option>
         <option>
           <name>OGLastSavedByProductVersion</name>
-          <state>8.40.1.21529</state>
+          <state>8.32.2.19370</state>
         </option>
         <option>
           <name>GeneralEnableMisra</name>
@@ -77,7 +77,7 @@
         </option>
         <option>
           <name>OGChipSelectEditMenu</name>
-          <state>STM32F103ZE	ST STM32F103ZE</state>
+          <state>STM32F103VE	ST STM32F103VE</state>
         </option>
         <option>
           <name>GenLowLevelInterface</name>
@@ -137,7 +137,7 @@
         </option>
         <option>
           <name>GFPUDeviceSlave</name>
-          <state>STM32F103ZE	ST STM32F103ZE</state>
+          <state>STM32F103VE	ST STM32F103VE</state>
         </option>
         <option>
           <name>FPU2</name>
@@ -227,6 +227,7 @@
           <state>STM32F103xE</state>
           <state>__RTTHREAD__</state>
           <state>RT_USING_DLIBC</state>
+          <state>_DLIB_FILE_DESCRIPTOR</state>
           <state>USE_HAL_DRIVER</state>
         </option>
         <option>
@@ -356,7 +357,9 @@
           <state>$PROJ_DIR$\libraries\HAL_Drivers\config</state>
           <state>$PROJ_DIR$\rt-thread\include</state>
           <state>$PROJ_DIR$\libraries\HAL_Drivers</state>
+          <state>$PROJ_DIR$\libraries\STM32F1xx_HAL\STM32F1xx_HAL_Driver\Inc</state>
           <state>$PROJ_DIR$\board\ports</state>
+          <state>$PROJ_DIR$\rt-thread\components\dfs\include</state>
           <state>$PROJ_DIR$\rt-thread\libcpu\arm\common</state>
           <state>$PROJ_DIR$\rt-thread\libcpu\arm\cortex-m3</state>
           <state>$PROJ_DIR$\rt-thread\components\finsh</state>
@@ -365,7 +368,7 @@
           <state>$PROJ_DIR$\rt-thread\components\libc\compilers\dlib</state>
           <state>$PROJ_DIR$\rt-thread\components\drivers\include</state>
           <state>$PROJ_DIR$\board</state>
-          <state>$PROJ_DIR$\libraries\STM32F1xx_HAL\STM32F1xx_HAL_Driver\Inc</state>
+          <state>$PROJ_DIR$\rt-thread\components\dfs\filesystems\devfs</state>
           <state>$PROJ_DIR$\libraries\STM32F1xx_HAL\CMSIS\Include</state>
           <state>$PROJ_DIR$\board\CubeMX_Config\Inc</state>
           <state>$PROJ_DIR$\libraries\STM32F1xx_HAL\CMSIS\Device\ST\STM32F1xx\Include</state>
@@ -385,7 +388,7 @@
         </option>
         <option>
           <name>CCOptLevel</name>
-          <state>1</state>
+          <state>0</state>
         </option>
         <option>
           <name>CCOptStrategy</name>
@@ -394,7 +397,7 @@
         </option>
         <option>
           <name>CCOptLevelSlave</name>
-          <state>1</state>
+          <state>0</state>
         </option>
         <option>
           <name>CompilerMisraRules98</name>
@@ -707,7 +710,7 @@
       <name>ILINK</name>
       <archiveVersion>0</archiveVersion>
       <data>
-        <version>23</version>
+        <version>22</version>
         <wantNonLocal>1</wantNonLocal>
         <debug>1</debug>
         <option>
@@ -724,7 +727,7 @@
         </option>
         <option>
           <name>IlinkOutputFile</name>
-          <state>project.out</state>
+          <state>template.out</state>
         </option>
         <option>
           <name>IlinkDebugInfoEnable</name>
@@ -760,7 +763,7 @@
         </option>
         <option>
           <name>IlinkMapFile</name>
-          <state>0</state>
+          <state>1</state>
         </option>
         <option>
           <name>IlinkLogFile</name>
@@ -784,11 +787,11 @@
         </option>
         <option>
           <name>IlinkIcfOverride</name>
-          <state>1</state>
+          <state>0</state>
         </option>
         <option>
           <name>IlinkIcfFile</name>
-          <state>$PROJ_DIR$\board\linker_scripts\link.icf</state>
+          <state>$TOOLKIT_DIR$\config\linker\ST\stm32f103xE.icf</state>
         </option>
         <option>
           <name>IlinkIcfFileSlave</name>
@@ -1021,27 +1024,11 @@
         </option>
         <option>
           <name>IlinkTrustzoneImportLibraryOut</name>
-          <state>###Unitialized###</state>
+          <state>template_import_lib.o</state>
         </option>
         <option>
           <name>OILinkExtraOption</name>
           <state>1</state>
-        </option>
-        <option>
-          <name>IlinkRawBinaryFile2</name>
-          <state />
-        </option>
-        <option>
-          <name>IlinkRawBinarySymbol2</name>
-          <state />
-        </option>
-        <option>
-          <name>IlinkRawBinarySegment2</name>
-          <state />
-        </option>
-        <option>
-          <name>IlinkRawBinaryAlign2</name>
-          <state />
         </option>
       </data>
     </settings>
@@ -1299,6 +1286,7 @@
           <state>STM32F103xE</state>
           <state>__RTTHREAD__</state>
           <state>RT_USING_DLIBC</state>
+          <state>_DLIB_FILE_DESCRIPTOR</state>
           <state>USE_HAL_DRIVER</state>
         </option>
         <option>
@@ -1428,7 +1416,9 @@
           <state>$PROJ_DIR$\libraries\HAL_Drivers\config</state>
           <state>$PROJ_DIR$\rt-thread\include</state>
           <state>$PROJ_DIR$\libraries\HAL_Drivers</state>
+          <state>$PROJ_DIR$\libraries\STM32F1xx_HAL\STM32F1xx_HAL_Driver\Inc</state>
           <state>$PROJ_DIR$\board\ports</state>
+          <state>$PROJ_DIR$\rt-thread\components\dfs\include</state>
           <state>$PROJ_DIR$\rt-thread\libcpu\arm\common</state>
           <state>$PROJ_DIR$\rt-thread\libcpu\arm\cortex-m3</state>
           <state>$PROJ_DIR$\rt-thread\components\finsh</state>
@@ -1437,7 +1427,7 @@
           <state>$PROJ_DIR$\rt-thread\components\libc\compilers\dlib</state>
           <state>$PROJ_DIR$\rt-thread\components\drivers\include</state>
           <state>$PROJ_DIR$\board</state>
-          <state>$PROJ_DIR$\libraries\STM32F1xx_HAL\STM32F1xx_HAL_Driver\Inc</state>
+          <state>$PROJ_DIR$\rt-thread\components\dfs\filesystems\devfs</state>
           <state>$PROJ_DIR$\libraries\STM32F1xx_HAL\CMSIS\Include</state>
           <state>$PROJ_DIR$\board\CubeMX_Config\Inc</state>
           <state>$PROJ_DIR$\libraries\STM32F1xx_HAL\CMSIS\Device\ST\STM32F1xx\Include</state>
@@ -1779,7 +1769,7 @@
       <name>ILINK</name>
       <archiveVersion>0</archiveVersion>
       <data>
-        <version>23</version>
+        <version>22</version>
         <wantNonLocal>1</wantNonLocal>
         <debug>0</debug>
         <option>
@@ -1832,7 +1822,7 @@
         </option>
         <option>
           <name>IlinkMapFile</name>
-          <state>0</state>
+          <state>1</state>
         </option>
         <option>
           <name>IlinkLogFile</name>
@@ -2099,22 +2089,6 @@
           <name>OILinkExtraOption</name>
           <state>1</state>
         </option>
-        <option>
-          <name>IlinkRawBinaryFile2</name>
-          <state />
-        </option>
-        <option>
-          <name>IlinkRawBinarySymbol2</name>
-          <state />
-        </option>
-        <option>
-          <name>IlinkRawBinarySegment2</name>
-          <state />
-        </option>
-        <option>
-          <name>IlinkRawBinaryAlign2</name>
-          <state />
-        </option>
       </data>
     </settings>
     <settings>
@@ -2220,6 +2194,30 @@
     </file>
   </group>
   <group>
+    <name>Filesystem</name>
+    <file>
+      <name>$PROJ_DIR$\rt-thread\components\dfs\src\dfs.c</name>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\rt-thread\components\dfs\src\dfs_file.c</name>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\rt-thread\components\dfs\src\dfs_fs.c</name>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\rt-thread\components\dfs\src\dfs_posix.c</name>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\rt-thread\components\dfs\src\poll.c</name>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\rt-thread\components\dfs\src\select.c</name>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\rt-thread\components\dfs\filesystems\devfs\devfs.c</name>
+    </file>
+  </group>
+  <group>
     <name>finsh</name>
     <file>
       <name>$PROJ_DIR$\rt-thread\components\finsh\shell.c</name>
@@ -2229,6 +2227,39 @@
     </file>
     <file>
       <name>$PROJ_DIR$\rt-thread\components\finsh\msh.c</name>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\rt-thread\components\finsh\msh_file.c</name>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\rt-thread\components\finsh\finsh_compiler.c</name>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\rt-thread\components\finsh\finsh_error.c</name>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\rt-thread\components\finsh\finsh_heap.c</name>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\rt-thread\components\finsh\finsh_init.c</name>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\rt-thread\components\finsh\finsh_node.c</name>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\rt-thread\components\finsh\finsh_ops.c</name>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\rt-thread\components\finsh\finsh_parser.c</name>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\rt-thread\components\finsh\finsh_var.c</name>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\rt-thread\components\finsh\finsh_vm.c</name>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\rt-thread\components\finsh\finsh_token.c</name>
     </file>
   </group>
   <group>
@@ -2280,6 +2311,9 @@
     <name>libc</name>
     <file>
       <name>$PROJ_DIR$\rt-thread\components\libc\compilers\common\time.c</name>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\rt-thread\components\libc\compilers\common\unistd.c</name>
     </file>
     <file>
       <name>$PROJ_DIR$\rt-thread\components\libc\compilers\dlib\environ.c</name>
