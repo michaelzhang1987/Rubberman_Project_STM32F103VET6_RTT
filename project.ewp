@@ -358,6 +358,7 @@
           <state>$PROJ_DIR$\rt-thread\components\finsh</state>
           <state>$PROJ_DIR$\libraries\STM32F1xx_HAL\STM32F1xx_HAL_Driver\Inc</state>
           <state>$PROJ_DIR$\board\CubeMX_Config\Inc</state>
+          <state>$PROJ_DIR$\packages\fal-v0.5.0\inc</state>
           <state>$PROJ_DIR$\libraries\STM32F1xx_HAL\CMSIS\Device\ST\STM32F1xx\Include</state>
           <state>$PROJ_DIR$\libraries\HAL_Drivers\config</state>
           <state>$PROJ_DIR$\libraries\HAL_Drivers</state>
@@ -365,6 +366,7 @@
           <state>$PROJ_DIR$\.</state>
           <state>$PROJ_DIR$\rt-thread\components\drivers\include</state>
           <state>$PROJ_DIR$\board</state>
+          <state>$PROJ_DIR$\libraries\HAL_Drivers\drv_flash</state>
           <state>$PROJ_DIR$\rt-thread\components\libc\compilers\dlib</state>
           <state>$PROJ_DIR$\board\ports</state>
           <state>$PROJ_DIR$\rt-thread\libcpu\arm\cortex-m3</state>
@@ -1420,6 +1422,7 @@
           <state>$PROJ_DIR$\rt-thread\components\finsh</state>
           <state>$PROJ_DIR$\libraries\STM32F1xx_HAL\STM32F1xx_HAL_Driver\Inc</state>
           <state>$PROJ_DIR$\board\CubeMX_Config\Inc</state>
+          <state>$PROJ_DIR$\packages\fal-v0.5.0\inc</state>
           <state>$PROJ_DIR$\libraries\STM32F1xx_HAL\CMSIS\Device\ST\STM32F1xx\Include</state>
           <state>$PROJ_DIR$\libraries\HAL_Drivers\config</state>
           <state>$PROJ_DIR$\libraries\HAL_Drivers</state>
@@ -1427,6 +1430,7 @@
           <state>$PROJ_DIR$\.</state>
           <state>$PROJ_DIR$\rt-thread\components\drivers\include</state>
           <state>$PROJ_DIR$\board</state>
+          <state>$PROJ_DIR$\libraries\HAL_Drivers\drv_flash</state>
           <state>$PROJ_DIR$\rt-thread\components\libc\compilers\dlib</state>
           <state>$PROJ_DIR$\board\ports</state>
           <state>$PROJ_DIR$\rt-thread\libcpu\arm\cortex-m3</state>
@@ -2202,6 +2206,9 @@
       <name>$PROJ_DIR$\board\CubeMX_Config\Src\stm32f1xx_hal_msp.c</name>
     </file>
     <file>
+      <name>$PROJ_DIR$\board\ports\on_chip_flash_init.c</name>
+    </file>
+    <file>
       <name>$PROJ_DIR$\board\ports\spi_flash_init.c</name>
     </file>
     <file>
@@ -2217,7 +2224,25 @@
       <name>$PROJ_DIR$\libraries\HAL_Drivers\drv_spi.c</name>
     </file>
     <file>
+      <name>$PROJ_DIR$\libraries\HAL_Drivers\drv_flash\drv_flash_f1.c</name>
+    </file>
+    <file>
       <name>$PROJ_DIR$\libraries\HAL_Drivers\drv_common.c</name>
+    </file>
+  </group>
+  <group>
+    <name>fal</name>
+    <file>
+      <name>$PROJ_DIR$\packages\fal-v0.5.0\src\fal.c</name>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\packages\fal-v0.5.0\src\fal_flash.c</name>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\packages\fal-v0.5.0\src\fal_partition.c</name>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\packages\fal-v0.5.0\src\fal_rtt.c</name>
     </file>
   </group>
   <group>
@@ -2401,6 +2426,12 @@
     </file>
     <file>
       <name>$PROJ_DIR$\libraries\STM32F1xx_HAL\STM32F1xx_HAL_Driver\Src\stm32f1xx_ll_spi.c</name>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\libraries\STM32F1xx_HAL\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_flash.c</name>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\libraries\STM32F1xx_HAL\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_flash_ex.c</name>
     </file>
   </group>
 </project>
