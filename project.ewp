@@ -355,6 +355,7 @@
           <name>CCIncludePath2</name>
           <state />
           <state>$PROJ_DIR$\rt-thread\include</state>
+          <state>$PROJ_DIR$\packages\EasyFlash-latest\inc</state>
           <state>$PROJ_DIR$\rt-thread\components\finsh</state>
           <state>$PROJ_DIR$\libraries\STM32F1xx_HAL\STM32F1xx_HAL_Driver\Inc</state>
           <state>$PROJ_DIR$\board\CubeMX_Config\Inc</state>
@@ -1419,6 +1420,7 @@
           <name>CCIncludePath2</name>
           <state />
           <state>$PROJ_DIR$\rt-thread\include</state>
+          <state>$PROJ_DIR$\packages\EasyFlash-latest\inc</state>
           <state>$PROJ_DIR$\rt-thread\components\finsh</state>
           <state>$PROJ_DIR$\libraries\STM32F1xx_HAL\STM32F1xx_HAL_Driver\Inc</state>
           <state>$PROJ_DIR$\board\CubeMX_Config\Inc</state>
@@ -2212,6 +2214,9 @@
       <name>$PROJ_DIR$\board\ports\spi_flash_init.c</name>
     </file>
     <file>
+      <name>$PROJ_DIR$\board\ports\ef_fal_port.c</name>
+    </file>
+    <file>
       <name>$PROJ_DIR$\libraries\STM32F1xx_HAL\CMSIS\Device\ST\STM32F1xx\Source\Templates\iar\startup_stm32f103xe.s</name>
     </file>
     <file>
@@ -2228,6 +2233,33 @@
     </file>
     <file>
       <name>$PROJ_DIR$\libraries\HAL_Drivers\drv_common.c</name>
+    </file>
+  </group>
+  <group>
+    <name>EasyFlash</name>
+    <file>
+      <name>$PROJ_DIR$\packages\EasyFlash-latest\src\easyflash.c</name>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\packages\EasyFlash-latest\src\ef_cmd.c</name>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\packages\EasyFlash-latest\src\ef_env.c</name>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\packages\EasyFlash-latest\src\ef_env_legacy.c</name>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\packages\EasyFlash-latest\src\ef_env_legacy_wl.c</name>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\packages\EasyFlash-latest\src\ef_iap.c</name>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\packages\EasyFlash-latest\src\ef_log.c</name>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\packages\EasyFlash-latest\src\ef_utils.c</name>
     </file>
   </group>
   <group>

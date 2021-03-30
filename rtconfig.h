@@ -15,7 +15,7 @@
 #define RT_USING_HOOK
 #define RT_USING_IDLE_HOOK
 #define RT_IDLE_HOOK_LIST_SIZE 4
-#define IDLE_THREAD_STACK_SIZE 256
+#define IDLE_THREAD_STACK_SIZE 2048
 #define RT_DEBUG
 #define RT_DEBUG_COLOR
 
@@ -49,7 +49,7 @@
 
 #define RT_USING_COMPONENTS_INIT
 #define RT_USING_USER_MAIN
-#define RT_MAIN_THREAD_STACK_SIZE 2048
+#define RT_MAIN_THREAD_STACK_SIZE 4096
 #define RT_MAIN_THREAD_PRIORITY 10
 
 /* C++ features */
@@ -164,6 +164,14 @@
 
 /* tools packages */
 
+#define PKG_USING_EASYFLASH
+#define PKG_EASYFLASH_ENV
+#define PKG_EASYFLASH_ERASE_GRAN 2048
+#define PKG_EASYFLASH_WRITE_GRAN_32BITS
+#define PKG_EASYFLASH_WRITE_GRAN 32
+#define PKG_EASYFLASH_START_ADDR 0
+#define PKG_USING_EASYFLASH_LATEST_VERSION
+#define PKG_EASYFLASH_VER_NUM 0x99999
 
 /* system packages */
 
@@ -189,7 +197,7 @@
 /* samples: kernel and components samples */
 
 
-/* entertainment: terminal entertainments */
+/* entertainment: terminal games and other interesting software packages */
 
 #define SOC_FAMILY_STM32
 #define SOC_SERIES_STM32F1
