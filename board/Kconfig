@@ -21,6 +21,11 @@ menu "Onboard Peripheral Drivers"
         select RT_USING_DFS
         select RT_USING_DFS_ELMFAT
         default n
+	config BSP_USING_ETH
+        bool "Enable Ethernet"
+        select PKG_USING_WIZNET
+        select WIZ_USING_W5500
+        default n
    
 endmenu
 
